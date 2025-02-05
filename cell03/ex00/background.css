@@ -1,0 +1,18 @@
+body {
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    padding-top: 50px; /* เพิ่มช่องว่างด้านบน */
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer; /* ทำให้เมาส์เป็นรูปมือเมื่อชี้ */
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
