@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.parallax {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  background-attachment: fixed;
+}
+
+.bg1 {
+  background-image: url("https://www.mos.org/sites/default/files/styles/max_2600x2600/public/2024-05/Earth-Around-Us-First-Photograph-16x9.jpg?itok=cVKSJtSS");
+}
+
+.blackbox {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.bg2 {
+  background-image: url("https://media.istockphoto.com/id/524328479/photo/deep-space-nebula.jpg?s=612x612&w=0&k=20&c=oslzxuwJZOUVmVE1GT5otpoAwNqX827mCcbC-wtx6pY=");
+}
