@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="stylesheet" href="skills.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <a href="index.html" class="brand-name">Pollawat Thongkong</a>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>My Skills</h1>
+    <p>Explore my expertise in various tools and programming languages.</p>
+  </section>
+
+  <section class="skills">
+    <div class="skill-category">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <!-- Programming Languages -->
+        <div class="skill-card">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+          <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python Logo" class="logo">
+            <img src="https://static-00.iconduck.com/assets.00/java-original-icon-756x1024-j3tx11wk.png" alt="Java Logo" class="logo">
+          </div>
+        </div>
+  
+        <!-- Database Language -->
+        <div class="skill-card">
+          <h3>Database Language</h3>
+          <ul>
+            <li>SQL</li>
+          </ul>
+          <div class="logo-container">
+            <img src="https://static-00.iconduck.com/assets.00/sql-database-generic-icon-1521x2048-d0vdpxpg.png" alt="SQL Logo" class="logo">
+          </div>
+        </div>
+  
+        <!-- Visualization Tools -->
+        <div class="skill-card">
+          <h3>Visualization Tools</h3>
+          <ul>
+            <li>Tableau</li>
+          </ul>
+          <div class="logo-container">
+            <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau Logo" class="logo">
+          </div>
+        </div>
+  
+        <!-- Statistic Programs -->
+        <div class="skill-card">
+          <h3>Statistic Programs</h3>
+          <ul>
+            <li>Minitab</li>
+            <li>SPSS</li>
+          </ul>
+          <div class="logo-container">
+            <img src="https://cdn.cs.1worldsync.com/a5/f2/a5f2cbeb-1245-453d-b46c-5a861e11ccdd.jpg" alt="Minitab Logo" class="logo">
+            <img src="https://www.theanalysisfactor.com/wp-content/uploads/2022/09/SPSS-blog.png" alt="SPSS Logo" class="logo">
+          </div>
+        </div>
+  
+        <!-- Spreadsheets -->
+        <div class="skill-card">
+          <h3>Spreadsheets</h3>
+          <ul>
+            <li>Excel</li>
+            <li>Google Sheets</li>
+          </ul>
+          <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/2203px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel Logo" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/1498px-Google_Sheets_logo_%282014-2020%29.svg.png" alt="Google Sheets Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>Ponlawat Thongkong ❤️</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

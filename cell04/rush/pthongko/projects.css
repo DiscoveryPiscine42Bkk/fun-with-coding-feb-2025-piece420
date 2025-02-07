@@ -1,0 +1,217 @@
+/*  General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 70px; 
+}
+
+/*Header & Navigation */
+header {
+    background-color: lightseagreen;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Responsive Navigation */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+#nav-links.show {
+    display: flex;
+}
+
+/* Projects Section */
+.projects {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+}
+
+.projects h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* Project Card */
+.project {
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.logo-group {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.project-logo {
+    width: 40px;
+    height: auto;
+    max-width: 50px; 
+}
+
+.project h2 {
+    color: #333;
+}
+
+.project p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+.project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project li {
+    color: #555;
+    line-height: 1.6;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design (Mobile View) */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: lightseagreen;
+        text-align: center;
+        padding: 10px 0;
+        
+    }
+    
+    nav ul.show {
+        display: flex;
+        
+    }
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 40px;
+    }
+    
+    /* Projects Section */
+    .projects {
+        padding: 10px 10px;
+    }
+
+    .projects h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* Project Cards */
+    .project {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .project h2 {
+        font-size: 22px;
+    }
+
+    .project p {
+        font-size: 16px;
+    }
+
+    .project ul li {
+        font-size: 14px;
+    }
+
+    .logo-group {
+        top: 10px;
+        right: 10px;
+        gap: 5px;
+    }
+
+    .project-logo {
+        width: 15px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+

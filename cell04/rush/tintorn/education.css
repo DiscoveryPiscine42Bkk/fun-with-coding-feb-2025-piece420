@@ -1,0 +1,255 @@
+/* Body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+  }
+  
+  /* --- Header & Navigation --- */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* --- Responsive Navigation --- */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    
+  }
+  
+  /* Intro section styling */
+  .intro {
+    background-image: url('https://insights.tt-s.com/sites/insights/files/media/2022-11/learner-journey.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 80px; /* Adjusting for fixed header */
+  }
+  
+  .intro h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .intro p {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Timeline section */
+  .timeline {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Degrees styling */
+  .timeline h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .degree {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  
+  .degree-info, .degree-details {
+    flex-basis: 48%;
+  }
+  
+  .degree:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .degree-info {
+    max-width: 50%;
+  }
+  
+  .degree-info h3 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .degree-info p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .degree-details {
+    max-width: 40%;
+  }
+  
+  .degree-details p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .degree-details a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .degree-details a:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  /* --- Responsive Design (Mobile View) --- */
+  @media (max-width: 768px) {
+    /* Navigation */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+      position: fixed; /* ✅ Fixed Hamburger */
+      top: 15px;
+      right: 40px;
+    }
+  
+    /* Intro Section */
+    .intro {
+      padding: 40px 20px;
+      margin-top: 80px; /* Adjusting for fixed header */
+    }
+  
+    .intro h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+  
+    .intro p {
+      font-size: 20px;
+    }
+  
+    /* Timeline Section */
+    .timeline {
+      padding: 40px 20px;
+      margin: 0 10px;
+    }
+  
+    .degree {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .degree-info, .degree-details {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .degree-info h3 {
+      font-size: 22px;
+    }
+  
+    .degree-info p {
+      font-size: 16px;
+    }
+  
+    .degree-details p {
+      font-size: 14px;
+    }
+  
+    /* Footer */
+    footer {
+      position: static;
+      padding: 1rem;
+    }
+  }
+  

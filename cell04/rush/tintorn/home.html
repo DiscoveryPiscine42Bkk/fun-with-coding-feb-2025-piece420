@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .link-block {
+      width: 200px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .link-block:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .link-block.one {
+      background-image: url('https://cdn.discordapp.com/attachments/878829693200130069/1337115951836958852/image.png?ex=67a645c5&is=67a4f445&hm=0417db2610a73798379498f5b82f5f6956beb32a741e73859fc137d3f37c637f&');
+    }
+
+    .link-block.two {
+      background-image: url('https://media.discordapp.net/attachments/878829693200130069/1337272828839591946/image.png?ex=67a6d7df&is=67a5865f&hm=a9b03f6629bfae0b68a495306be31c8155eb1d1af40b8d289bf6dceb83cb998e&=&format=webp&quality=lossless');
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="link-block one"></a> 
+    <a href="contact.html" class="link-block two"></a> 
+  </div>
+
+</body>
+</html>

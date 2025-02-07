@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="education.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+        <a href="index.html" class="brand-name">Teerapong Intorn</a>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>My Education Journey</h1>
+        <p>Explore my academic background and qualifications</p>
+    </section>
+
+    <section class="timeline">
+        <h2>Degrees Received</h2>
+        <div class="degree">
+        <div class="degree-info">
+            <h3>Mathematics-Science</h3>
+            <p>Mary Immaculate Convent School</p>
+            <p>GPA: 3.55</p>
+            <p>2020 - 2022</p>
+        </div>
+        <div class="degree-details">
+            <p>Studied Mathematics-Science</p>
+            <a href="http://www.mary.ac.th/welcome" target="_blank">Website</a>
+        </div>
+        </div>
+
+        <div class="degree">
+        <div class="degree-info">
+            <h3>Bachelor of Applied Statistics</h3>
+            <p>King Mongkut's Institute of Technology Ladkrabang</p>
+            <p>GPA: 3.55</p>
+            <p>2022 - Present</p>
+        </div>
+        <div class="degree-details">
+            <p>Studied Data Analysis, Statistical Modeling, Time Series, and more.</p>
+            <a href="https://www.kmitl.ac.th/" target="_blank">Website</a>
+        </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Teerapong Intorn ❤️ </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+          document.getElementById("nav-links").classList.toggle("show");
+        }
+      </script>
+
+    </body>
+    </html>

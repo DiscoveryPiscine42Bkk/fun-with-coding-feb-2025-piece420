@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header & Navigation */
+header {
+    background-color: lightseagreen;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Responsive Navigation */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/*Contact-container Sectio*/
+.contact-container {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    font-size: 2rem;
+    color: #333;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #0073e6;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.resume-button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Responsive Design (Mobile View) */
+@media (max-width: 768px) {
+        /* Navigation */
+        nav ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: lightseagreen;
+            text-align: center;
+            padding: 10px 0;
+          }
+        
+          nav ul.show {
+            display: flex;
+          }
+        
+          .hamburger {
+            display: block;
+            position: fixed;
+            top: 15px;
+            right: 10px;
+          }
+        
+
+    .contact-container {
+        max-width: 100%; 
+        padding: 15px;
+        margin: 20px;  
+    }
+
+    .profile-photo {
+        width: 80%; 
+        max-width: 150px; 
+        margin: 0 auto 20px;  
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    p {
+        font-size: 1rem;  
+    }
+
+    .social-media {
+        justify-content: space-evenly;  
+    }
+
+    .resume-button {
+        font-size: 1rem; 
+        padding: 8px 16px;  
+    }
+}

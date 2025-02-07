@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollawat's Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="brand-name">Pollawat Thongkong</a>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content"> 
+    <section class="intro">
+      <div class="left">
+        <img src="https://media.discordapp.net/attachments/878829693200130069/1337272828839591946/image.png?ex=67a6d7df&is=67a5865f&hm=a9b03f6629bfae0b68a495306be31c8155eb1d1af40b8d289bf6dceb83cb998e&=&format=webp&quality=lossless" alt="Pollawat's Image">
+      </div>
+      <div class="right">
+        <h1>Hello All! I'm Pollawat 😄</h1>
+        <p>A passionate Data Analyst, Statistics, Finance</p>
+        <p>Nickname: Pooh</p>
+        <p>Birthday: 22 December 2003</p>
+        <p>Age: 21</p>
+        <p>Tel: 0955967440</p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/pollawat_tk/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:poohthongkong@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Pollawat Thongkong ❤️ </p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
